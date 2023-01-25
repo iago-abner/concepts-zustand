@@ -7,7 +7,6 @@ interface Post {
   body: string
 }
 
-
 interface CountProps {
   title: string
   count: number
@@ -37,8 +36,3 @@ export const useCounter = create<CountProps>((set) => ({
     }))
   }
 }))
-
-// increaseCount: () => void
-// decrementCount: () => void
-// increaseCount: () => set((state) => ({ count: state.count + 1 })),
-//   decrementCount: () => set((state) => ({ count: state.count - 1 }))
